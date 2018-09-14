@@ -36,13 +36,13 @@ class TrackController extends Controller
     public function store(Request $request)
     {   
         return $request->all();
-        $track = new Track;
-        $track->trip_id = $request->trip_id;
-        $track->latitude = $request->latitude;
-        $track->longitude = $request->longitude;
-        $track->save();
+        // $track = new Track;
+        // $track->trip_id = $request->trip_id;
+        // $track->latitude = $request->latitude;
+        // $track->longitude = $request->longitude;
+        // $track->save();
 
-        return $track;
+        // return $track;
 
     }
 

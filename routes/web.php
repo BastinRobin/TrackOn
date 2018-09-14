@@ -20,8 +20,8 @@ Route::get('/', function() {
 });
 
 
+Route::resource('trip', 'TripController');
 Route::resource('track', 'TrackController');
-
 
 // Route::post('/', 'TodoController@store');
 

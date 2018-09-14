@@ -14,7 +14,7 @@ class TripController extends Controller
      */
     public function index()
     {
-        //
+        return Trip::all();
     }
 
     /**
@@ -35,7 +35,13 @@ class TripController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $trip = new Trip;
+        $trip->from = $request->from;
+        $trip->to = $request->to;
+        $trip->status = $request->status;
+        $trip->frequency = $request->frequency;
+        $trip->save();
+        return $trip;
     }
 
     /**
